@@ -8,10 +8,11 @@ if (commands.indexOf(command) == -1) {
 }
 
 let taskManagerApp = new TaskManager;
+console.log(taskManagerApp);
 
 switch (command) {
     case 'new':
-
+        taskManagerApp.createNewTask();
         break;
 
     case 'done':
