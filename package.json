@@ -1,0 +1,25 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "cli-todolist",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kia-Eslamian/cli-todolist.git"
+  },
+  "keywords": [
+    "cli-todolist",
+    "cli",
+    "todolist",
+    "todo"
+  ],
+  "author": "KiaEslamian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kia-Eslamian/cli-todolist/issues"
+  },
+  "homepage": "https://github.com/Kia-Eslamian/cli-todolist#readme"
+}
