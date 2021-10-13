@@ -8,23 +8,31 @@ if (commands.indexOf(command) == -1) {
 }
 
 let taskManagerApp = new TaskManager;
-console.log(taskManagerApp);
+// console.log(taskManagerApp);
 
+let taskIndex = process.argv[3];
 switch (command) {
     case 'new':
         taskManagerApp.createNewTask();
         break;
 
-    case 'done':
-
+    case 'delete':
+        taskIndex = process.argv[3];
+        taskManagerApp.deleteTask(taskIndex);
         break;
 
-    case 'delete':
-
+    case 'done':
+        taskIndex = process.argv[3];
+        taskManagerApp.setDone(taskIndex);
+        taskManagerApp.printTasks();
         break;
 
     case 'list':
+        taskManagerApp.printTasks();
+        break;
 
+    case 'help':
+        taskManagerApp.help();
         break;
 
     default:
