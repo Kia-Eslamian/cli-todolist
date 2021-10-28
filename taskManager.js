@@ -56,7 +56,7 @@ class TaskManager {
 
     deleteTask(taskIndex) {
         // this.tasks = this.tasks.splice(taskIndex, 1);
-        this.tasks = this.tasks.splice(taskIndex, 1);
+        this.tasks.splice(taskIndex, 1);
         this.updateTasksFile();
     }
     setDone(taskIndex) {
